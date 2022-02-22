@@ -20,7 +20,7 @@
   }
   section {
     height: 100vh;
-    background:rgb(252, 246, 246) url('../pics/ski3.jpg') no-repeat center center fixed;
+    background:rgb(252, 246, 246) url('../pics/ski3.jpg') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
