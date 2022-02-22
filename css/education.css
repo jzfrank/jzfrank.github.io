@@ -1,3 +1,22 @@
+section {
+    height: 100vh;
+    background:rgb(252, 246, 246) url('../pics/ethz.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+section span {
+    margin: 0;
+    font-size: 400%;
+    text-align: center;
+    line-height: 1;
+    padding-top: calc(50vh - 20pt);
+    display: block;
+    font-weight: 500;
+    color: aliceblue;
+  }
+
 header {
     width: 100%;
     padding: 1em;
