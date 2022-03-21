@@ -6,12 +6,13 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 p {
-  font-size: 20px;
+  font-size: 16px;
 }
 p.small {
-  font-size: 16px;
+  font-size: 10px;
 }
 a,
 a:hover,
@@ -20,6 +21,7 @@ a:active,
 a.active {
   color: #2666CF;
   outline: none;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -85,10 +87,10 @@ header .intro-text .name {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: 300;
 }
 @media (min-width: 768px) {
@@ -97,10 +99,10 @@ header .intro-text .skills {
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 2rem;
   }
   header .intro-text .skills {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 .navbar-custom {
@@ -146,14 +148,14 @@ header .intro-text .skills {
   color: white;
   background: #2666CF;
 }
-.navbar-custom .navbar-toggle {
+.navbar-custom .navbar-toggler {
   color: white;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 16px;
   border-color: white;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.navbar-custom .navbar-toggler:hover,
+.navbar-custom .navbar-toggler:focus {
   background-color: #2666CF;
   color: white;
   border-color: #2666CF;
@@ -166,7 +168,7 @@ header .intro-text .skills {
     transition: padding 0.3s;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 1.3rem;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -504,7 +506,17 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 
+/* -----------newly added classes----------------- */
+
 .my-photo {
   width: 30vh;
   border-radius: 80%;
+}
+
+.card {
+  overflow: scroll;
+}
+
+.card-img-top {
+  overflow: hidden;
 }

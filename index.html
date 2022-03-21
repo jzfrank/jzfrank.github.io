@@ -3,39 +3,66 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Jin Zhang</title>
+  <title>Jin Zhang</title>
 
-    <link rel="icon" href="img/favicon.ico">
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico">
+  <!-- Bootstrap Core CSS -->
 
-    <!-- Theme CSS -->
-    <!-- <link href="css/freelancer.min.css" rel="stylesheet"> -->
-    <link href="css/freelancer.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Theme CSS -->
+  <!-- <link href="css/freelancer.min.css" rel="stylesheet"> -->
+  <link href="css/freelancer.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" data-bs-spy="scroll" data-bs-target="#my-navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-    <!-- Navigation -->
+  <!-- Navigation -->
+  <nav id="my-navbar" class="navbar navbar-expand-md navbar-default fixed-top navbar-fixed-top navbar-custom affix">
+
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link" href="#page-top">Jin Zhang</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <script>
+    /*
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,42 +91,144 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+*/
+  </script>
+
+
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive my-photo" src="img/JZ_photo_half.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Hey there! I am Jin.</span>
-                        <hr class="star-light">
-                        <span class="skills">A self-taught programmer. <br/> A full stack web developer.</span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive my-photo" src="img/JZ_photo_half.png" alt="">
+            <div class="intro-text">
+              <span class="name">Hey there! I am Jin.</span>
+              <hr class="star-light">
+              <span class="skills">A self-taught programmer. <br /> A full stack web developer.</span>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+            <hr class="star-primary">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="album py-5 bg-light">
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
+        <!-- row 1 -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/smile.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Gimme-a-joke</h5>
+                  <p class="card-text">Hi, is this the joke you ordered? Smile!</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://jzfrank.github.io/Gimme-a-joke/">View</a></button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/dice.png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Cannot make decisions? Just throw a dice!</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://jzfrank.github.io/JustDicee/">View</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/simon.png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Challenge your memory by playing Simon Game</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/jzfrank/SimonGame">View</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- row 2 -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/drums.jpg" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Drum-kits</h5>
+                  <p class="card-text">Play drum kits online.</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://jzfrank.github.io/Drum-kit/">View</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/dice.png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Cannot make decisions? Just throw a dice!</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://jzfrank.github.io/JustDicee/">View</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="img/portfolio/simon.png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Challenge your memory by playing Simon Game</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/jzfrank/SimonGame">View</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <script>
+          /*
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
+                        <i class="fa fa-solid fa-face-laugh-squint"></i>
+                        <img src="img/portfolio/funny_dog.jpg" class="img-responsive" alt="">
+                    </a> -->
+                    <img src="img/portfolio/funny_dog.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -108,7 +237,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/drums.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -152,110 +281,99 @@
                     </a>
                 </div>
             </div>
-        </div>
+*/
+        </script>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                  <p>I am a student currently doing my master degree at ETHz at Zürich.
-                    I obtained my Bachelor degree in Applied Mathematics with
-                    distinction at the Chinese University of Hong Kong, Shenzhen.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    Initially, I was just curious about the world of web Development
-                     and stepped into it via a bootcamp. Yet I get enchanted.
-                    Creating new and interesting stuffs out of nothing? This is absolutely fantastic.
-                </p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <!-- <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a> -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About</h2>
+            <hr class="star-light">
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-2">
+            <p>I am a student currently doing my master degree at ETHz at Zürich.
+              I obtained my Bachelor degree in Applied Mathematics with
+              distinction at the Chinese University of Hong Kong, Shenzhen.</p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Initially, I was just curious about the world of web Development
+              and stepped into it via a bootcamp. Yet I get enchanted.
+              Creating new and interesting stuffs out of nothing? This is absolutely fantastic.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Bahnhaldenstrasse 11, 8052, Zürich</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Reach Me at</h3>
-                        <ul class="list-inline">
-                            <!-- <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li> -->
-                            <!-- <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li> -->
-                            <li>
-                                <a href="mailto:zhajin@ethz.ch" class="btn-social btn-outline"><i class="fa fa-solid fa-envelope"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/jin-zhang-05643b173/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/jzfrank" class="btn-social btn-outline"><i class="fa fa-brand fa-github"></i></a>
-                            </li>
-                            <!-- <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li> -->
-
-                            <li>
-                                <a href="tel:(+41)765182495" class="btn-social btn-outline"><i class="fa fa-solid fa-phone"></i></a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>More About Me</h3>
-
-                        <p><a href="https://github.com/jzfrank/About-me/raw/main/JinZHANG.pdf">Download My CV</a></p>
-                    </div>
-                </div>
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Location</h3>
+              <p>Bahnhaldenstrasse 11, 8052, Zürich</p>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Jin 2022
-                    </div>
-                </div>
+            <div class="footer-col col-md-4">
+              <h3>Reach Me at</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="mailto:zhajin@ethz.ch" class="btn-social btn-outline"><i class="fa fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/jin-zhang-05643b173/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/jzfrank" class="btn-social btn-outline"><i class="fa fa-brand fa-github"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="tel:(+41)765182495" class="btn-social btn-outline"><i class="fa fa-solid fa-phone"></i></a>
+                </li>
+
+
+              </ul>
             </div>
+            <div class="footer-col col-md-4">
+              <h3>More About Me</h3>
+
+              <p><a href="https://github.com/jzfrank/About-me/raw/main/JinZHANG.pdf">Download My CV</a></p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; Jin 2022
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+      <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </div>
 
+
+
+  <script>
+    /*
     <!-- Portfolio Modals -->
+    <!--
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -270,8 +388,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/funny_dog.jpg" class="img-responsive img-centered" alt="">
+                            <p>Life is so harsh, please remember to smile. Here you are, get a cup of jokes.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Yourname</a>
@@ -307,7 +425,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/drums.jpg" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -478,18 +596,20 @@
             </div>
         </div>
     </div>
+-->
+*/
+  </script>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+  <!-- Theme JavaScript -->
+  <script src="js/freelancer.js"></script>
 
 </body>
 
