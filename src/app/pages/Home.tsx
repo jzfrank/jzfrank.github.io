@@ -23,8 +23,8 @@ export default function Home({ setSelectedIndex }: Props) {
   }, [setSelectedIndex]);
 
   useEffect(() => {
-    document.title = process.env.REACT_APP_NAME!;
-  }, [pathname]);
+    document.title = "Jin Zhang";
+  }, []);
 
   return (
     <Grid
@@ -45,7 +45,7 @@ export default function Home({ setSelectedIndex }: Props) {
               display="flex"
               justifyContent={{ xs: "center", sm: "flex-start" }}
             >
-              <Typography variant="h3">{process.env.REACT_APP_NAME}</Typography>
+              <Typography variant="h3">Jin Zhang</Typography>
             </Grid>
             <Grid
               display="flex"
