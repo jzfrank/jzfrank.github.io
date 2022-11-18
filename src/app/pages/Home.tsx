@@ -11,6 +11,7 @@ import React, { useEffect } from "react";
 import logo from "../../static/favicon.png";
 import { useLocation } from "react-router-dom";
 import { links } from "./links";
+import Typewriter from "typewriter-effect";
 
 interface Props {
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -52,7 +53,19 @@ export default function Home({ setSelectedIndex }: Props) {
               justifyContent={{ xs: "center", sm: "flex-start" }}
             >
               <Typography variant="subtitle1" gutterBottom>
-                Life is life.
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Hi, I'm Jin",
+                      "I am a Software Engineer",
+                      "I am a Web Developer",
+                      "I enjoy solving real world problems",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 1,
+                  }}
+                />
               </Typography>
             </Grid>
             <Grid
