@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
+  FaDev,
 } from "react-icons/fa";
 
 export const links = [
@@ -25,16 +26,10 @@ export const links = [
     href: "mailto:frankjinzhang@gmail.com",
     icon: <FaEnvelope />,
   },
-  // {
-  //   index: 3,
-  //   title: "Find me on Medium",
-  //   href: "https://medium.com/@noworneverev",
-  //   icon: <FaMedium />,
-  // },
-  // {
-  //   index: 4,
-  //   title: "Find me on Blog",
-  //   href: "https://noworneverev.github.io/blog/",
-  //   icon: <FaBlog />,
-  // },
+  {
+    index: 3,
+    title: "Find me on Blog",
+    href: "https://dev.to/jzfrank",
+    icon: <FaDev />,
+  },
 ];
