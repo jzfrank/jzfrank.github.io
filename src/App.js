@@ -1,7 +1,60 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
+
+const WORK_EXPERIENCES = [
+  {
+    position: "Software Engineer",
+    company: "Zupan AG",
+    location: "Zurich, Switzerland",
+    description:
+      "Developed and launched the web version of MVP in two months. \
+         Authored production ready code that considers internationalization, type safety, error tracking, and modularity. Contributed to the entire product development life cycle. \
+         Engineered features including an insights dashboard, pagination, list filters, custom tables, no pricing mode, column header remapping table, and custom organization settings using NextJS, TailwindCSS, Tremor, TypeScript, MySQL, MongoDB, and Prisma. \
+         Integrated Sage, Square, and Shopify for inventory management, enabling easy tracking via OAuth2, webhooks, REST, and GraphQL APIs.\
+         Implemented paginated fetching utilizing Spring Boot.",
+    date: "06/2023 - 04/2024",
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "G20 Advisors AG",
+    location: "Zurich, Switzerland",
+    description: `Constructed and maintained dynamic data visualization dashboards and a monitoring system for exchange connections using ASP.NET (C\#), JavaScript, Bootstrap 5, and Plotly, significantly enhancing traders' daily workflow and efficiency.
+         Developed Python web crawlers with Selenium and Beautiful Soup to automate the arduous task of manually recording recent months' closing prices of various cryptocurrencies.
+         Engaged with cross-functional team members (including back-office support, traders, and development teams) utilizing methodologies such as Git, Confluence, Azure DevOps, Trello, and Agile, to optimize trading strategies and profitability.`,
+    date: "10/2022 - 03/2023",
+  },
+  {
+    position: "SQL Developer Intern",
+    company: "Kuaishou Technology",
+    location: "Beijing, China",
+    description: `Engineered rule-based algorithms with SQL to procure high-quality video samples, effectively mitigating data imbalance challenges and thereby elevating overall model performance.
+         Leveraged Numpy and Pandas to scrutinize, visualize, and analyze model performance, consistently attaining optimal accuracy, recall, and F1 score results.`,
+    date: "06/2021 - 08/2021",
+  },
+  {
+    position: "Python Developer Intern",
+    company: "Surreal Technology",
+    location: "Shenzhen, China",
+    description: `Mastered the training of a face recognition deep learning model utilizing the cutting-edge arcFace metric and an innovative data preprocessing approach with PyTorch, achieving a remarkable accuracy of over 99\% on the challenging LFW (Labeled Face in the Wild) dataset.
+                  Proficient in Linux, shell scripting, Git, and TensorBoard technologies.`,
+    date: "04/2021 - 06/2021",
+  },
+  {
+    position: "Algorithmic Engineer Intern",
+    company: "Ping’ An Technology",
+    location: "Shenzhen, China",
+    description: `Employed Bash and Python scripting in a Linux environment to scrutinize and enhance the efficiency of machine algorithms (U-net) in distinguishing background noise from clear speech, yielding substantial enhancements to overall audio quality.
+         Provided comprehensive weekly briefings on cutting-edge research and advancements in speech enhancement to ensure the research team remained abreast of the latest trends and insights.`,
+    date: "08/2020 - 12/2020",
+  },
+];
 
 function App() {
+  const [showDescriptions, setShowDescriptions] = useState(
+    Array(WORK_EXPERIENCES.length).fill(false)
+  );
+
   return (
     <div className="bg-gray-100 min-h-screen py-4">
       <div className=" mx-2 sm:mx-10 lg:mx-24 bg-white min-h-screen rounded-lg shadow-lg">
@@ -29,9 +82,9 @@ function App() {
             <div className="col-span-12 lg:col-span-8 font-sans px-2 sm:px-4 md:px-16 lg:px-0 flex flex-col gap-3">
               <div className="flex lg:justify-center lg:pb-5 justify-start">
                 <span className="text-sm lg:text-xl font-bold">
-                  <span className="font-semibold text-gray-500">I'm a</span> 💻
+                  <span className="font-semibold text-gray-500">I'm a</span>💻
                   full-stack developer,{" "}
-                  <span className="font-semibold text-gray-500">and</span> a ⛰️
+                  <span className="font-semibold text-gray-500">and a</span>⛰️
                   hiking addict
                 </span>
               </div>
@@ -97,62 +150,16 @@ function App() {
             </div>
           </div>
           {/* Work Experience */}
-          <div className="py-5 px-16 flex flex-col gap-3">
+          <div className="py-5 px-10 flex flex-col gap-3">
             <div className="text-sm text-gray-500">Work Experience:</div>
             <div className="flex flex-col gap-2">
-              {[
-                {
-                  position: "Software Engineer",
-                  company: "Zupan AG",
-                  location: "Zurich, Switzerland",
-                  description:
-                    "Developed and launched the web version of MVP in two months. Provided Ad hoc support for iOS/Android development with adding callbacks, flashlights, and configurations.\
-         Authored production ready code that considers internationalization, type safety, error tracking, and modularity. Contributed to the entire product development life cycle. \
-         Engineered features including an insights dashboard, pagination, list filters, custom tables, no pricing mode, column header remapping table, and custom organization settings using NextJS, TailwindCSS, Tremor, TypeScript, MySQL, MongoDB, and Prisma. \
-         Integrated Sage, Square, and Shopify for inventory management, enabling easy tracking via OAuth2, webhooks, REST, and GraphQL APIs.\
-         Implemented paginated fetching utilizing Spring Boot.",
-                  date: "06/2023 - 04/2024",
-                },
-                {
-                  position: "Software Engineer Intern",
-                  company: "G20 Advisors AG",
-                  location: "Zurich, Switzerland",
-                  description: `Constructed and maintained dynamic data visualization dashboards and a monitoring system for exchange connections using ASP.NET (C\#), JavaScript, Bootstrap 5, and Plotly, significantly enhancing traders' daily workflow and efficiency.
-         Developed Python web crawlers with Selenium and Beautiful Soup to automate the arduous task of manually recording recent months' closing prices of various cryptocurrencies.
-         Engaged with cross-functional team members (including back-office support, traders, and development teams) utilizing methodologies such as Git, Confluence, Azure DevOps, Trello, and Agile, to optimize trading strategies and profitability.`,
-                  date: "10/2022 - 03/2023",
-                },
-                {
-                  position: "SQL Developer Intern",
-                  company: "Kuaishou Technology",
-                  location: "Beijing, China",
-                  description: `Engineered rule-based algorithms with SQL to procure high-quality video samples, effectively mitigating data imbalance challenges and thereby elevating overall model performance.
-         Leveraged Numpy and Pandas to scrutinize, visualize, and analyze model performance, consistently attaining optimal accuracy, recall, and F1 score results.`,
-                  date: "06/2021 - 08/2021",
-                },
-                {
-                  position: "Python Developer Intern",
-                  company: "Surreal Technology",
-                  location: "Shenzhen, China",
-                  description: `Mastered the training of a face recognition deep learning model utilizing the cutting-edge arcFace metric and an innovative data preprocessing approach with PyTorch, achieving a remarkable accuracy of over 99\% on the challenging LFW (Labeled Face in the Wild) dataset.
-                  Proficient in Linux, shell scripting, Git, and TensorBoard technologies.`,
-                  date: "04/2021 - 06/2021",
-                },
-                {
-                  position: "Algorithmic Engineer Intern",
-                  company: "Ping’ An Technology",
-                  location: "Shenzhen, China",
-                  description: `Employed Bash and Python scripting in a Linux environment to scrutinize and enhance the efficiency of machine algorithms (U-net) in distinguishing background noise from clear speech, yielding substantial enhancements to overall audio quality.
-         Provided comprehensive weekly briefings on cutting-edge research and advancements in speech enhancement to ensure the research team remained abreast of the latest trends and insights.`,
-                  date: "08/2020 - 12/2020",
-                },
-              ].map((experience) => (
+              {WORK_EXPERIENCES.map((experience, index) => (
                 <div
                   className="p-4 rounded-md border-[1px] hover:shadow-md hover:cursor-default text-gray-500 text-sm"
                   key={experience.description}
                 >
                   <div className="grid grid-cols-12 gap-5 justify-between items-start">
-                    <div className="col-span-4">
+                    <div className="col-span-12 md:col-span-4">
                       <span className="flex flex-col gap-2">
                         <div>{experience.date}</div>
                         <div className="text-xs lg:text-sm">
@@ -160,7 +167,7 @@ function App() {
                         </div>
                       </span>
                     </div>
-                    <div className="col-span-8">
+                    <div className="col-span-12 md:col-span-8">
                       <div className="flex flex-col gap-2">
                         <span className="font-semibold">
                           <span className="italic">{experience.position}</span>{" "}
@@ -168,7 +175,48 @@ function App() {
                           <span> {experience.company}</span>
                         </span>
                         <span className="text-xs lg:text-sm text-gray-400">
-                          {experience.description}
+                          <div className="lg:hidden">
+                            {showDescriptions[index] ? (
+                              <>
+                                {experience.description}
+                                <p
+                                  className="text-blue-400 underline italic hover:cursor-pointer"
+                                  onClick={() =>
+                                    setShowDescriptions((prev) => {
+                                      const newShowDescriptions = [...prev];
+                                      newShowDescriptions[index] = false;
+                                      return newShowDescriptions;
+                                    })
+                                  }
+                                >
+                                  hide
+                                </p>
+                              </>
+                            ) : (
+                              <>
+                                {experience.description
+                                  .split(" ")
+                                  .slice(0, 30)
+                                  .join(" ")}
+                                ...
+                                <span
+                                  className="text-blue-400 underline italic hover:cursor-pointer pl-1"
+                                  onClick={() => {
+                                    setShowDescriptions((prev) => {
+                                      const newShowDescriptions = [...prev];
+                                      newShowDescriptions[index] = true;
+                                      return newShowDescriptions;
+                                    });
+                                  }}
+                                >
+                                  more
+                                </span>
+                              </>
+                            )}
+                          </div>
+                          <div className="hidden lg:block">
+                            {experience.description}
+                          </div>
                         </span>
                       </div>
                     </div>
@@ -178,7 +226,7 @@ function App() {
             </div>
           </div>
           {/* Projects */}
-          <div className="py-5 px-16 flex flex-col gap-3 bg-slate-50">
+          <div className="py-5 px-10 flex flex-col gap-3 bg-slate-50">
             <div className="text-sm text-gray-500">Selection of Projects:</div>
             <div className="grid grid-cols-12 gap-y-4 gap-x-3">
               {[
