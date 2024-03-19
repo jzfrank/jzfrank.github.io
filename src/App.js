@@ -1,6 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const WORK_EXPERIENCES = [
   {
@@ -56,10 +58,10 @@ function App() {
   );
 
   return (
-    <div className="bg-gray-100 min-h-screen py-4">
-      <div className=" mx-2 sm:mx-10 lg:mx-24 bg-white min-h-screen rounded-lg shadow-lg">
+    <div className="bg-gray-100 py-4">
+      <div className=" mx-2 sm:mx-10 lg:mx-24 bg-white rounded-lg shadow-lg">
         <header></header>
-        <div className=" flex flex-col gap-5">
+        <div className=" flex flex-col gap-3">
           {/* Introduction */}
           <div className="py-5 px-10 grid grid-cols-12 gap-4 bg-slate-50">
             <div className="hidden lg:block lg:col-span-4"></div>
@@ -79,7 +81,7 @@ function App() {
                 className="rounded-full w-36 md:w-64 lg:w-72 shadow-lg"
               />
             </div>
-            <div className="col-span-12 lg:col-span-8 font-sans px-2 sm:px-4 md:px-16 lg:px-0 flex flex-col gap-3">
+            <div className="col-span-12 lg:col-span-8 font-sans px-2 sm:px-4 h-full md:px-16 lg:px-0 flex flex-col gap-3">
               <div className="flex lg:justify-center lg:pb-5 justify-start">
                 <span className="text-sm lg:text-xl font-bold">
                   <span className="font-semibold text-gray-500">I'm a</span>💻
@@ -120,32 +122,38 @@ function App() {
                 </p>
                 <p>I can be reached at:</p>
               </div>
-              <div className="flex justify-center items-center gap-3">
-                <ul className="text-sm md:text-md lg:text-lg flex gap-4 lg:gap-8 justify-center">
+              <div className="flex justify-center items-center gap-3 w-full mb-2">
+                <div className="grid-cols-12 grid gap-4">
                   {[
                     {
                       href: "https://www.linkedin.com/in/frankjinzhang/",
                       text: "LinkedIn",
+                      favicon: faLinkedin,
                     },
                     {
                       href: "https://github.com/jzfrank/",
                       text: "GitHub",
+                      favicon: faGithub,
                     },
                     {
                       href: "mailto:frankjinzhang@gmail.com",
                       text: "Email",
+                      favicon: faEnvelope,
                     },
                   ].map((item) => (
-                    <li>
+                    <div key={item.href} className="col-span-4 text-center">
                       <a
                         href={item.href}
                         className="text-blue-500 text-sm font-semibold underline"
                       >
-                        {item.text}
+                        <FontAwesomeIcon
+                          icon={item.favicon}
+                          className="h-4 md:h-6 lg:h-8"
+                        />
                       </a>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
           </div>
