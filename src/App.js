@@ -180,7 +180,7 @@ function App() {
           {/* Projects */}
           <div className="py-5 px-16 flex flex-col gap-3 bg-slate-50">
             <div className="text-sm text-gray-500">Selection of Projects:</div>
-            <div className="grid grid-cols-12 gap-y-2 gap-x-2">
+            <div className="grid grid-cols-12 gap-y-4 gap-x-3">
               {[
                 {
                   title: "Tremor React",
@@ -195,7 +195,7 @@ function App() {
                   description:
                     "A full-stack web dashboard that helps Zupan Hub manage their inventory. It is implemented with t3 stack using NextJS, Typescript, TailwindCSS, and Prisma.",
                   logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
-                  deployedLink: "hub.zupan.ai",
+                  deployedLink: "https://hub.zupan.ai",
                 },
                 {
                   title: "Memory Game (Web Version)",
