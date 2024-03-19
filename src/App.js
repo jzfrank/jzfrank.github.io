@@ -71,11 +71,11 @@ function App() {
                 <ul className="text-sm md:text-md lg:text-lg flex gap-4 lg:gap-8 justify-center">
                   {[
                     {
-                      href: "https://www.linkedin.com/in/jin-zhang-3a5a6b1a7/",
+                      href: "https://www.linkedin.com/in/frankjinzhang/",
                       text: "LinkedIn",
                     },
                     {
-                      href: "github.com",
+                      href: "https://github.com/jzfrank/",
                       text: "GitHub",
                     },
                     {
