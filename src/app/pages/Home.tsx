@@ -56,7 +56,7 @@ export default function Home({ setSelectedIndex }: Props) {
                 <Typewriter
                   options={{
                     strings: [
-                      "Hi, I'm Jin",
+                      "Hi, I'm Jin Zhang",
                       "I am a Software Engineer",
                       "I am a Web Developer",
                       "I enjoy solving real world problems",
