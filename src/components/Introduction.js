@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Introduction = () => {
   return (
-    <div className="py-5 px-10 grid grid-cols-12 gap-4 bg-slate-50">
+    <div className="grid grid-cols-12">
       <div className="hidden lg:block lg:col-span-4"></div>
       <div className="col-span-12 lg:col-span-8">
         <div className="flex justify-center lg:pb-4">

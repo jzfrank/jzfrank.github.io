@@ -8,7 +8,6 @@ const WorkExperience = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="text-sm text-gray-500">Work Experience:</div>
       <div className="flex flex-col gap-2">
         {WORK_EXPERIENCES.map((experience, index) => (
           <div

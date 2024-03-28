@@ -4,7 +4,6 @@ import { PROJECTS } from "../data/constants";
 const Projects = () => {
   return (
     <div className="flex flex-col">
-      <div className="text-sm text-gray-500">Selection of Projects:</div>
       <div className="grid grid-cols-12 gap-y-4 gap-x-3">
         {PROJECTS.map((project) => (
           <div
